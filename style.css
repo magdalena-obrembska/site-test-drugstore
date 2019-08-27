@@ -1,0 +1,38 @@
+
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("images/ground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100vh;
+
+  }
+  #nav1
+{
+    background-color:white;
+    opacity: 0.6;
+    filter:(opacity=50);
+}
+  .navbar{
+    position: relative;
+    z-index: 1;
+
+  }
+  #brand{
+    font-weight: bold;
+    color: yellowgreen;
+    letter-spacing: 2px;
+  }
+  
+
+  .carousel-inner{
+    height: 60vh;
+    width: 80vw;
+    margin: 0 auto;
+
+
+  }
