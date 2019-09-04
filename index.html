@@ -1,4 +1,4 @@
-{
+
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <link rel="Stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
     <title>Drugstore Test Site</title>
   </head>
   <body>
@@ -44,7 +45,7 @@
     </form>
   </div>
 </nav>
-<!-- Carousel with product's main categories -->
+<!--Carousel with product's main categories-->
 <div class="categories">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -57,10 +58,10 @@
       <img class="d-block w-100" src="images/brushes.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/makeup.jpg" alt="Second slide">
+      <img class="d-block w-100" id= "secondSlide"  src="images/pencils.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/sale.png" alt="Third slide">
+      <img class="d-block w-100" id= "thirdSlide" src="images/nailPolish.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -73,10 +74,96 @@
   </a>
 </div>
 </div>
+<!--Cards with products-->
+<h1 class="mainCategories">Kategorie</h1>
+<section class="cosmeticsCategories">
+  <div class="card" style="width: 17rem;">
+  <img src="images/palette.jpg" class="card-img-top" alt="Eyeshadows">
+  <div class="card-body">
+    <h5 class="card-title">Makijaż - oczy</h5>
+    <a href="#" class="btn btn-primary showProducts">Zobacz</a>
+  </div>
+</div>
+<div class="card" style="width: 17rem;">
+  <img src="images/lipstick.jpg" class="card-img-top" alt="Lipsticks">
+  <div class="card-body">
+    <h5 class="card-title">Makijaż - usta</h5>
+    <a href="#" class="btn btn-primary showProducts">Zobacz nowości!</a>
+  </div>
+</div>
+<div class="card" style="width: 17rem;">
+  <img src="images/faceMakeup.jpg" class="card-img-top" alt="faceMakeup">
+  <div class="card-body">
+    <h5 class="card-title">Makijaż - twarz</h5>
+    <a href="#" class="btn btn-primary showProducts">Zobacz</a>
+  </div>
+</div>
+<div class="card" style="width: 17rem;">
+  <img src="images/perfume.jpg" class="card-img-top" alt="Perfumes">
+  <div class="card-body">
+    <h5 class="card-title">Perfumeria</h5>
+    <a href="#" class="btn btn-primary showProducts">Promocje</a>
+  </div>
+</div>
+<div class="card" style="width: 17rem;">
+  <img src="images/men-care.jpg" class="card-img-top" alt="menCosmetics">
+  <div class="card-body">
+    <h5 class="card-title">Dla mężczyzn</h5>
+    <a href="#" class="btn btn-primary showProducts">Zobacz</a>
+  </div>
+</div>
+<div class="card" style="width: 17rem;">
+  <img src="images/natureCare.jpg" class="card-img-top" alt="naturalCosmetics">
+  <div class="card-body">
+    <h5 class="card-title">Produkty organic!</h5>
+    <a href="#" class="btn btn-primary showProducts">Zobacz nowości!</a>
+  </div>
+</div>
+</section>
+<!--Email and contact area.-->
+<div class="firstContainer">
+<section class="writeUs">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adres email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Twój adres email">
+    <small id="emailHelp" class="form-text text-muted">Adres email podany przy rejestracji</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hasło</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Nie pamiętam hasła.</label>
+  </div>
+  <button type="submit" class="btn btn-primary logIn">Zaloguj się</button>
+    <button type="submit" class="btn btn-primary newAccount">Załóż konto</button>
+</form>
+</section>
+<!--Section with makeup tips-->
+<section class="makeupTips">
+
+<div class="card" style="width: 28rem;">
+  <img src="images/makeup.jpg" class="card-img-top tips" alt="makeupTips">
+  <div class="card-body">
+    <h5 class="card-title">Porady wizażystki</h5>
+    <p class="card-text">Czasami warto zasięgnąć rady eksperta i poznać techniki makijażu i pielęgnacji twarzy i ciała.</p>
+    <a href="#" class="btn btn-primary btnTips">Zobacz porady!</a>
+  </div>
+</div>
+</section>
+</div>
+<!--Footer-->
+<footer class="page-footer font-small blue footerEnd">
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href class="bootlink"="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
   </body>
   </html>
-}

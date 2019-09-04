@@ -9,30 +9,132 @@
     background-size: cover;
     background-attachment: fixed;
     max-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 
   }
   #nav1
-{
+  {
     background-color:white;
-    opacity: 0.6;
+    opacity: 0.7;
     filter:(opacity=50);
-}
+  }
   .navbar{
     position: relative;
     z-index: 1;
-
+    font-weight: bold;
   }
   #brand{
     font-weight: bold;
     color: yellowgreen;
     letter-spacing: 2px;
   }
-  
+#secondSlide{
+background-size: cover;
+}
 
   .carousel-inner{
     height: 60vh;
     width: 80vw;
     margin: 0 auto;
 
+  }
+  .mainCategories{
+    text-align: center;
+    padding: 5%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  .categories{
+    margin-top: 5vh;
+  }
+  .cosmeticsCategories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+  }
+  .card{
+    background-color: transparent;
+    margin-right: 5vw;
+  }
+  .card-body{
+    color: white;
+    font-weight: bold;
+  }
+  .card-img-top{
+    opacity: 1;
+  }
+  .showProducts{
+    background-color: white;
+    opacity: 0.8;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .firstContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:center;
+  }
+
+  .writeUs{
+    color: white;
+    flex-basis: 30vw;
+margin-left: 8vw;
+margin-right: 15vw;
 
   }
+  .makeupTips{
+    flex-basis: 65vw;
+align-self: center;
+margin-top: 10vh;
+}
+
+.footerEnd{
+  color: white;
+  font-weight: bold;
+}
+
+.newAccount{
+  background-color: lightblue;
+  color: black;
+}
+.logIn{
+  background-color: darkblue;
+}
+.btnTips{
+  background-color: violet;
+}
+.bootlink{
+  color: pink;
+}
+
+@media(max-width: 800px){
+  .firstContainer{
+    flex-flow: column wrap;
+  }
+}
+@media(max-width: 460px){
+  .makeupTips{
+    width: 100%;
+  }
+    .d-block{
+      height: 40vh;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+      display: none;
+    }
+  ~li.active{
+    margin-top: -80px;
+  }
+  .tips{
+    
+    margin-right: 1vw;
+  }
+}
